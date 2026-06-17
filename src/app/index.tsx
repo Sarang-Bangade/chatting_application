@@ -1,30 +1,15 @@
-import { useState } from "react";
-import { Text, View, StyleSheet, Image ,TextInput, ScrollView} from "react-native";
+import {StyleSheet, Text, View} from 'react-native';
 
-export default function Index() {
-  const[input, setInput] = useState("Hello")
-  return (
-    <ScrollView>
-    <Image 
-          source={{
-            uri:"https://reactnative.dev/img/tiny_logo.png"
-          }}
-        height ={100}
-        width = {100}
-    />
-      <Text>Hi Sarang here</Text>
-<TextInput
-  onChangeText={setInput}
-  value={input}
-  />
-    </ScrollView>
-  );
-} 
+import React from 'react'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+const HomeScreen = () =>{
+  return(
+    <View>
+      <Text>Hey Sayali !!</Text>
+    </View>
+  )
+}
+
+export default HomeScreen
+
+const styles = StyleSheet.create({})
